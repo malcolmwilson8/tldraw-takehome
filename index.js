@@ -38,8 +38,8 @@ function makeDraggable(sticker) {
       document.removeEventListener("mousemove", onMouseMove);
       sticker.onmouseup = null;
       sticker.onmousedown = null;
-      console.log(stickerParent);
       stickerParent.append(clone);
+      makeDraggable(clone);
     };
   };
 }
