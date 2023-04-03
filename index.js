@@ -7,14 +7,14 @@ const stickers = [
 ];
 
 function makeDraggable(sticker) {
-  sticker.onmousedown = function (event) {
+  sticker.onclick = function (event) {
     const clone = sticker.cloneNode(true);
     const stickerParent = sticker.parentElement;
     // when sticker is clicked, move it out of any current parents directly into body
     // to make it positioned relative to the body, and clone it in its current pos
     document.body.append(sticker);
 
-    // centers the sticker at pageX and pageY coordinates under the mouse
+    // centers the sticker at pageX and pageY (webpage) coordinates under the mouse
     function centerSticker(pageX, pageY) {
       sticker.style.left = pageX - sticker.offsetWidth / 2 + "px";
       sticker.style.top = pageY - sticker.offsetHeight / 2 + "px";
@@ -37,7 +37,7 @@ function makeDraggable(sticker) {
     sticker.onmouseup = function (e) {
       document.removeEventListener("mousemove", onMouseMove);
       sticker.onmouseup = null;
-      sticker.onmousedown = null;
+      sticker.onclick = null;
       stickerParent.append(clone);
       makeDraggable(clone);
     };
