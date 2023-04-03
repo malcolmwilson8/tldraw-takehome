@@ -4,39 +4,32 @@
   margin: 0;
 }
 
-.pos-abs {
+.sticker {
   position: absolute;
+  cursor: pointer;
+  font-size: x-large;
+  padding: 5px;
+}
+
+.container {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.pos-rel {
+  position: relative;
 }
 
 .bottom-0 {
   bottom: 0;
 }
 
-div > button {
-  height: 60px;
-  width: 60px;
-  font-size: larger;
-}
-
-/* #sticker1,
-#sticker2,
-#sticker3,
-#sticker4,
-#sticker5 {
-} */
-
-.width-100 {
-  width: 100vw;
-}
-
-.margin-left-neg {
-  margin-left: -7px;
-}
-
-.padding-top-med {
-  padding-top: 10px;
-}
-
 .padding-bottom-med {
   padding-bottom: 10px;
+}
+
+.disp-inline-block {
+  display: inline-block;
 }
