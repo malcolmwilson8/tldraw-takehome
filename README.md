@@ -21,3 +21,9 @@ You've been assigned the ticket:
 3. As a **stretch goal**, pick one of the stories you created in step two and implement it in your app.
 
 Good luck!
+
+---
+
+# Response
+
+I responded to the delete placed stickers user story "As a user, I want to be able to delete stickers which I have placed on the webpage".
