@@ -1,7 +1,18 @@
-:root {
-  height: 100%;
-  width: 100%;
+/* Classes with batch styling */
+
+body {
   margin: 0;
+  padding: 0;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid rgb(50, 50, 50);
+  margin: 0;
+  margin-left: -5px;
+  padding: 0;
+  top: 0;
+  position: absolute;
 }
 
 .sticker {
@@ -18,18 +29,44 @@
   display: inline-block;
 }
 
-.pos-rel {
-  position: relative;
+/* Layout primitives to apply to individual elements as required */
+
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-abs {
+  position: absolute;
 }
 
 .bottom-0 {
   bottom: 0;
 }
 
+.top-0 {
+  top: 0;
+}
+
 .padding-bottom-med {
   padding-bottom: 10px;
 }
 
-.disp-inline-block {
-  display: inline-block;
+.padding-top-med {
+  padding-top: 10px;
+}
+
+.padding-left-sm {
+  padding-left: 5px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.grey-background {
+  background-color: rgb(234, 233, 233);
+}
+
+.delete {
+  display: none;
 }
